@@ -1,7 +1,6 @@
 'use client'
 
 import { type Editor } from '@tiptap/react'
-
 import styles from './Tiptap.module.css'
 
 type Props = {
@@ -42,15 +41,6 @@ export const Toolbar = ({ editor }: Props) => {
           }
         >
           Strike
-        </button>
-        <button
-          onClick={() => editor.chain().focus().toggleCode().run()}
-          disabled={!editor.can().chain().focus().toggleCode().run()}
-          className={
-            editor.isActive('code') ? styles.active : styles.non_active
-          }
-        >
-          Code
         </button>
         <button
           onClick={() => editor.chain().focus().setParagraph().run()}
@@ -149,14 +139,6 @@ export const Toolbar = ({ editor }: Props) => {
           Ordered list
         </button>
         <button
-          onClick={() => editor.chain().focus().toggleCodeBlock().run()}
-          className={
-            editor.isActive('codeBlock') ? styles.active : styles.non_active
-          }
-        >
-          Code block
-        </button>
-        <button
           onClick={() => editor.chain().focus().toggleBlockquote().run()}
           className={
             editor.isActive('blockquote') ? styles.active : styles.non_active
@@ -189,16 +171,6 @@ export const Toolbar = ({ editor }: Props) => {
           className={styles.non_active}
         >
           Redo
-        </button>
-        <button
-          onClick={() => editor.chain().focus().setColor('#958DF1').run()}
-          className={
-            editor.isActive('textStyle', { color: '#958DF1' })
-              ? styles.active
-              : styles.non_active
-          }
-        >
-          Purple
         </button>
       </div>
     </div>
