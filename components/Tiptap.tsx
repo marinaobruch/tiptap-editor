@@ -20,19 +20,7 @@ type Props = {
 
 const Tiptap = ({ onChange, content }: Props) => {
   const editor = useEditor({
-    extensions: [
-      Document,
-      Paragraph,
-      Blockquote,
-      // Blockquote.configure({
-      //   HTMLAttributes: {
-      //     class: styles.blockquote,
-      //   },
-      // }),
-      Text,
-      StarterKit,
-      Underline,
-    ],
+    extensions: [Document, Paragraph, Blockquote, Text, StarterKit, Underline],
     content,
     editorProps: {
       attributes: {

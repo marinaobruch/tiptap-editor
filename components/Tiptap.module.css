@@ -1,6 +1,6 @@
 .heading {
   font-size: 36px;
-  color: #6a00f5;
+  color: #ff7e00;
   padding: 8px;
 }
 
@@ -19,7 +19,7 @@
 
 .field:focus {
   transition: all 0.2s cubic-bezier(0.65, 0.05, 0.36, 1);
-  border: 1px solid #6a00f5;
+  border: 1px solid #ff7e00;
 }
 
 .control_group {
@@ -51,7 +51,7 @@
 }
 
 .active {
-  background: #6a00f5;
+  background: #ff7e00;
   border-radius: 4px;
   border: none;
   font-size: 16px;
@@ -61,19 +61,4 @@
   padding: 8px 12px;
   transition: all 0.2s cubic-bezier(0.65, 0.05, 0.36, 1);
   color: white;
-}
-
-/* Локальные стили для цитат */
-
-.tiptap:first-child {
-  margin-top: 0;
-}
-
-.tiptap .blockquote {
-  border-left: 3px solid #4b4848;
-  margin: 1.5rem 0;
-  padding-left: 1rem;
-  font-style: italic;
-  color: #4b4848;
-  background-color: #e25050;
 }
