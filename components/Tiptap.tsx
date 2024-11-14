@@ -1,9 +1,11 @@
 'use client'
 
 import Blockquote from '@tiptap/extension-blockquote'
+import BulletList from '@tiptap/extension-bullet-list'
 import Document from '@tiptap/extension-document'
 import FontFamily from '@tiptap/extension-font-family'
 import HardBreak from '@tiptap/extension-hard-break'
+import ListItem from '@tiptap/extension-list-item'
 import Paragraph from '@tiptap/extension-paragraph'
 import Text from '@tiptap/extension-text'
 import TextStyle from '@tiptap/extension-text-style'
@@ -29,6 +31,8 @@ const Tiptap = ({ onChange, content }: Props) => {
       Paragraph,
       Blockquote,
       Text,
+      ListItem,
+      BulletList,
       StarterKit,
       Underline,
       HardBreak.configure({
