@@ -17,38 +17,20 @@
   color: #ff7e00;
 }
 
-.field {
-  display: flex;
-  flex-direction: column;
-  padding: 8px;
-  justify-content: flex-start;
-  border: 1px solid #4a5568;
-  color: #3e3e3f;
-  align-items: flex-start;
-  font-weight: 500;
-  font-size: 16px;
-  outline: none;
-}
-
-.field:focus {
-  transition: all 0.2s cubic-bezier(0.65, 0.05, 0.36, 1);
-  border: 1px solid #ff7e00;
-}
-
 .control_group {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  padding: 1.5rem;
+  gap: 16px;
+  padding: 24px 24px 24px 0;
 }
 
 .style_group {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  padding: 1.5rem;
+  gap: 16px;
+  padding: 24px;
 }
 
 .button_group {
@@ -102,5 +84,28 @@
 }
 
 .hard_break {
-  margin: 2rem 0;
+  margin: 24px 0;
+}
+
+/* TEXT REDACTOR */
+.editor-wrapper {
+  flex-grow: 1;
+  overflow-y: auto;
+  max-height: 600px;
+  padding: 10px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  justify-content: flex-start;
+  border-right: 1px solid #4a5568;
+  color: #3e3e3f;
+  align-items: flex-start;
+  font-weight: 500;
+  font-size: 16px;
+  outline: none;
+  min-height: 160px;
+  line-height: 1.6;
 }

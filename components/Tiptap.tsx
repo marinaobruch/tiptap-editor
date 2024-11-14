@@ -50,9 +50,11 @@ const Tiptap = ({ onChange, content }: Props) => {
     <div className={styles.container}>
       <h1 className={styles.heading}>EDITOR PAGE</h1>
       <div className={styles.main_block}>
-        <div>
+        <div >
           <ToolbarUp editor={editor} />
-          <EditorContent editor={editor} />
+          <div className={styles['editor-wrapper']}>
+            <EditorContent editor={editor} />
+          </div>
         </div>
         <ToolbarRight editor={editor} />
       </div>
