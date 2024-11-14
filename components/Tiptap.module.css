@@ -48,6 +48,16 @@
   width: 100%;
 }
 
+.button_fonts_group {
+  margin: 16px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
 .non_active {
   background: #dcd9e0;
   border-radius: 4px;
@@ -63,11 +73,6 @@
   min-width: 40px;
 }
 
-.style_btn {
-  width: 100%;
-  text-align: left;
-}
-
 .active {
   background: #ff7e00;
   border-radius: 4px;
@@ -81,6 +86,15 @@
   color: white;
   min-height: 40px;
   min-width: 40px;
+}
+
+.style_btn {
+  width: 100%;
+  text-align: left;
+}
+
+.fonts_btn {
+  width: 100%;
 }
 
 .hard_break {

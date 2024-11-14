@@ -65,6 +65,119 @@ export const ToolbarRight = ({ editor }: Props) => {
         >
           Обычный
         </button>
+
+        <div className={styles.button_fonts_group}>
+          <button
+            onClick={() => editor.chain().focus().setFontFamily('Inter').run()}
+            className={
+              editor.isActive('textStyle', { fontFamily: 'Inter' })
+                ? cn(styles.fonts_btn, styles.active)
+                : cn(styles.fonts_btn, styles.non_active)
+            }
+            data-test-id="inter"
+          >
+            Inter
+          </button>
+          <button
+            onClick={() =>
+              editor
+                .chain()
+                .focus()
+                .setFontFamily('Comic Sans MS, Comic Sans')
+                .run()
+            }
+            className={
+              editor.isActive('textStyle', {
+                fontFamily: 'Comic Sans MS, Comic Sans',
+              })
+                ? cn(styles.fonts_btn, styles.active)
+                : cn(styles.fonts_btn, styles.non_active)
+            }
+            data-test-id="comic-sans"
+          >
+            Comic Sans
+          </button>
+          <button
+            onClick={() => editor.chain().focus().setFontFamily('serif').run()}
+            className={
+              editor.isActive('textStyle', { fontFamily: 'serif' })
+                ? cn(styles.fonts_btn, styles.active)
+                : cn(styles.fonts_btn, styles.non_active)
+            }
+            data-test-id="serif"
+          >
+            Serif
+          </button>
+          <button
+            onClick={() =>
+              editor.chain().focus().setFontFamily('monospace').run()
+            }
+            className={
+              editor.isActive('textStyle', { fontFamily: 'monospace' })
+                ? cn(styles.fonts_btn, styles.active)
+                : cn(styles.fonts_btn, styles.non_active)
+            }
+            data-test-id="monospace"
+          >
+            Monospace
+          </button>
+          <button
+            onClick={() =>
+              editor.chain().focus().setFontFamily('cursive').run()
+            }
+            className={
+              editor.isActive('textStyle', { fontFamily: 'cursive' })
+                ? cn(styles.fonts_btn, styles.active)
+                : cn(styles.fonts_btn, styles.non_active)
+            }
+            data-test-id="cursive"
+          >
+            Cursive
+          </button>
+          <button
+            onClick={() =>
+              editor
+                .chain()
+                .focus()
+                .setFontFamily('var(--title-font-family)')
+                .run()
+            }
+            className={
+              editor.isActive('textStyle', {
+                fontFamily: 'var(--title-font-family)',
+              })
+                ? cn(styles.fonts_btn, styles.active)
+                : cn(styles.fonts_btn, styles.non_active)
+            }
+            data-test-id="css-variable"
+          >
+            CSS variable
+          </button>
+          <button
+            onClick={() =>
+              editor
+                .chain()
+                .focus()
+                .setFontFamily('"Comic Sans MS", "Comic Sans"')
+                .run()
+            }
+            className={
+              editor.isActive('textStyle', { fontFamily: '"Comic Sans"' })
+                ? cn(styles.fonts_btn, styles.active)
+                : cn(styles.fonts_btn, styles.non_active)
+            }
+            data-test-id="comic-sans-quoted"
+          >
+            Comic Sans quoted
+          </button>
+          <button
+            onClick={() => editor.chain().focus().unsetFontFamily().run()}
+            className={cn(styles.fonts_btn, styles.non_active)}
+            data-test-id="unsetFontFamily"
+          >
+            Unset font family
+          </button>
+        </div>
       </div>
     </div>
   )

@@ -11,6 +11,10 @@ body {
   padding: 0;
 }
 
+html {
+  --title-font-family: 'Helvetica', sans-serif;
+}
+
 menu,
 ol,
 ul {
@@ -30,8 +34,13 @@ h4,
 h5,
 h6,
 hr,
+p,
 pre {
   margin: 0;
+}
+
+p {
+  margin: 4px 0;
 }
 
 a {
