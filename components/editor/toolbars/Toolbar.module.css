@@ -1,8 +1,4 @@
 /* CONTAINERS */
-.container {
-  margin: 16px;
-}
-
 .styles_container {
   display: flex;
   flex-wrap: wrap;
@@ -66,11 +62,6 @@
 }
 
 /* HEADINGS */
-.heading {
-  font-size: 36px;
-  color: #ff7e00;
-}
-
 .subtitle {
   font-size: 18px;
   color: #ff7e00;
@@ -114,23 +105,4 @@
 
 .fonts_btn {
   width: 100%;
-}
-
-/* TEXT REDACTOR */
-.editor-wrapper {
-  flex-grow: 1;
-  overflow-y: auto;
-  max-height: 600px;
-  padding: 10px;
-}
-
-.field {
-  padding: 8px;
-  border-right: 1px solid #4a5568;
-  color: #3e3e3f;
-  font-weight: 500;
-  font-size: 16px;
-  outline: none;
-  min-height: 160px;
-  line-height: 1.6;
 }

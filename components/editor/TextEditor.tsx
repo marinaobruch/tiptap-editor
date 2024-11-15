@@ -3,8 +3,8 @@
 import 'highlight.js/styles/atom-one-dark.css'
 
 import { useState } from 'react'
-import Tiptap from './Tiptap'
 import { initContent } from './init-data'
+import Tiptap from './Tiptap'
 
 const TextEditor = () => {
   const [content, setContent] = useState<string>(initContent)

@@ -2,7 +2,7 @@
 
 import { type Editor } from '@tiptap/react'
 import cn from 'classnames'
-import styles from './Tiptap.module.css'
+import styles from './Toolbar.module.css'
 
 type Props = {
   editor: Editor | null

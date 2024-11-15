@@ -19,7 +19,7 @@ import {
   WrapText,
 } from 'lucide-react'
 
-import styles from './Tiptap.module.css'
+import styles from './Toolbar.module.css'
 
 type Props = {
   editor: Editor | null

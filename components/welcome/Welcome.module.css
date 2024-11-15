@@ -1,0 +1,22 @@
+/* BLOCK */
+.container {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* HEADINGS */
+.headong {
+  font-size: 32px;
+  color: #000000;
+}
+
+.sub_heading {
+  font-size: 24px;
+  color: #000000;
+}

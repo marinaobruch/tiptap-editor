@@ -14,11 +14,11 @@ import Underline from '@tiptap/extension-underline'
 import { EditorContent, useEditor } from '@tiptap/react'
 import StarterKit from '@tiptap/starter-kit'
 
+import '@styles/tiptap.scss'
 import styles from './Tiptap.module.css'
-import './styles.scss'
 
-import { ToolbarRight } from './ToolbarRight'
-import { ToolbarUp } from './ToolbarUp'
+import { ToolbarRight } from './toolbars/ToolbarRight'
+import { ToolbarUp } from './toolbars/ToolbarUp'
 
 type Props = {
   onChange: (newContent: string) => void
