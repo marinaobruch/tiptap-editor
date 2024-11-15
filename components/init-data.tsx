@@ -20,7 +20,7 @@ export const initContent = `
   <br />
   — Mom
 </blockquote>
-
+<hr contenteditable="false">
 <p><span style="font-family: Inter">Did you know that Inter is a really nice font for interfaces?</span></p>
 <p><span style="font-family: Comic Sans MS, Comic Sans">It doesn’t look as professional as Comic Sans.</span></p>
 <p><span style="font-family: serif">Serious people use serif fonts anyway.</span></p>

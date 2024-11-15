@@ -144,25 +144,6 @@ export const ToolbarRight = ({ editor }: Props) => {
               editor
                 .chain()
                 .focus()
-                .setFontFamily('var(--title-font-family)')
-                .run()
-            }
-            className={
-              editor.isActive('textStyle', {
-                fontFamily: 'var(--title-font-family)',
-              })
-                ? cn(styles.fonts_btn, styles.active)
-                : cn(styles.fonts_btn, styles.non_active)
-            }
-            data-test-id="css-variable"
-          >
-            CSS variable
-          </button>
-          <button
-            onClick={() =>
-              editor
-                .chain()
-                .focus()
                 .setFontFamily('"Comic Sans MS", "Comic Sans"')
                 .run()
             }

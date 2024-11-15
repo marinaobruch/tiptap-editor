@@ -8,6 +8,7 @@ import HardBreak from '@tiptap/extension-hard-break'
 import ListItem from '@tiptap/extension-list-item'
 import Paragraph from '@tiptap/extension-paragraph'
 import Text from '@tiptap/extension-text'
+import TextAlign from '@tiptap/extension-text-align'
 import TextStyle from '@tiptap/extension-text-style'
 import Underline from '@tiptap/extension-underline'
 import { EditorContent, useEditor } from '@tiptap/react'
@@ -31,6 +32,9 @@ const Tiptap = ({ onChange, content }: Props) => {
       Paragraph,
       Blockquote,
       Text,
+      TextAlign.configure({
+        types: ['heading', 'paragraph'],
+      }),
       ListItem,
       BulletList,
       StarterKit,

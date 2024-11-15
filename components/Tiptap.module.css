@@ -118,13 +118,9 @@
 }
 
 .field {
-  display: flex;
-  flex-direction: column;
   padding: 8px;
-  justify-content: flex-start;
   border-right: 1px solid #4a5568;
   color: #3e3e3f;
-  align-items: flex-start;
   font-weight: 500;
   font-size: 16px;
   outline: none;

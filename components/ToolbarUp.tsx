@@ -3,6 +3,9 @@
 import { type Editor } from '@tiptap/react'
 import cn from 'classnames'
 import {
+  AlignCenter,
+  AlignLeft,
+  AlignRight,
   Bold,
   Italic,
   List,
@@ -115,6 +118,37 @@ export const ToolbarUp = ({ editor }: Props) => {
           className={cn(styles.non_active)}
         >
           <WrapText />
+        </button>
+
+        <button
+          onClick={() => editor.chain().focus().setTextAlign('left').run()}
+          className={
+            editor.isActive({ textAlign: 'left' })
+              ? styles.active
+              : styles.non_active
+          }
+        >
+          <AlignLeft />
+        </button>
+        <button
+          onClick={() => editor.chain().focus().setTextAlign('center').run()}
+          className={
+            editor.isActive({ textAlign: 'center' })
+              ? styles.active
+              : styles.non_active
+          }
+        >
+          <AlignCenter />
+        </button>
+        <button
+          onClick={() => editor.chain().focus().setTextAlign('right').run()}
+          className={
+            editor.isActive({ textAlign: 'right' })
+              ? styles.active
+              : styles.non_active
+          }
+        >
+          <AlignRight />
         </button>
       </div>
     </div>
