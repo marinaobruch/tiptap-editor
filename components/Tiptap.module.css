@@ -40,6 +40,13 @@
   gap: 8px;
 }
 
+.button_local_group {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  margin-right: 16px;
+}
+
 .button_styles_group {
   display: flex;
   flex-wrap: wrap;
